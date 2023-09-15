@@ -26,7 +26,7 @@ const output_typer = (code) => {
         for( let i = 0; i < disabled_btn.length; i++ ){disabled_btn[i].setAttribute("disabled", "");}
         terminal.scrollTop = terminal.scrollHeight;
         terminal.innerHTML += chars.shift();
-    }, 5);
+    }, 15);
 }
 
 /* ----- Blank Space Detector ----- */
