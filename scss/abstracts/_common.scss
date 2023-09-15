@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    &::before,&::after{
+        box-sizing: border-box;
+    }
+    &::selection{
+        background-color: $terminal-output-color;
+        color: $terminal-output-bg;
+    }
+}
+
+:root{ scroll-behavior: smooth;}
+
+html,body,div,p,h1,h2,h3,h4,h5,h6,section,img,header,main,footer,a,code{ margin: 0; padding: 0; }
+
+.pointer{ cursor: pointer; }
+
+.vh-100{
+    min-height: 100vh !important;
+}

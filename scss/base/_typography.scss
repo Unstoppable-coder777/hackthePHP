@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "lexend";
+  src: url("./fonts/lexend/Lexend-Regular.eot");
+  src: url("./fonts/lexend/Lexend-Regular.eot") format("embedded-opentype"),
+    url("./fonts/lexend/Lexend-Regular.svg") format("svg"),
+    url("./fonts/lexend/Lexend-Regular.ttf") format("truetype"),
+    url("./fonts/lexend/Lexend-Regular.woff") format("woff"),
+    url("./fonts/lexend/Lexend-Regular.woff2") format("woff2");
+}
+.lexend{ font-family: "lexend",sans-serif; }

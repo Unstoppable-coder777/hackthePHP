@@ -1,0 +1,163 @@
+@import url("./utilities/grid-system.css");
+@import url("./utilities/text.css");
+@import url("./utilities/fonts.css");
+@import url("./utilities/forms.css");
+@import url("./utilities/gap.css");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: #0be881;
+  color: black;
+}
+*::selection {
+  background-color: #0be881;
+  color: black;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, section, img, header, main, footer, a, code {
+  margin: 0;
+  padding: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.vh-100 {
+  min-height: 100vh !important;
+}
+
+@font-face {
+  font-family: "lexend";
+  src: url("./fonts/lexend/Lexend-Regular.eot");
+  src: url("./fonts/lexend/Lexend-Regular.eot") format("embedded-opentype"), url("./fonts/lexend/Lexend-Regular.svg") format("svg"), url("./fonts/lexend/Lexend-Regular.ttf") format("truetype"), url("./fonts/lexend/Lexend-Regular.woff") format("woff"), url("./fonts/lexend/Lexend-Regular.woff2") format("woff2");
+}
+.lexend {
+  font-family: "lexend", sans-serif;
+}
+
+.body-bg {
+  background-color: #c8d6e5;
+}
+
+.header-bg {
+  background-color: #222f3e;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.terminal-header-bg {
+  background-color: #222f3e;
+}
+
+.terminal-output-bg {
+  background-color: black;
+}
+
+.terminal-output-color {
+  color: #0be881;
+}
+
+#exec {
+  padding: 8px 16px;
+  background-color: #222f3e;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #0be881;
+  cursor: pointer;
+}
+
+.menu-btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.7em;
+}
+
+.code-btn {
+  padding: 8px 16px;
+  background-color: #222f3e;
+  border: none;
+  outline: none;
+  color: #0be881;
+  cursor: pointer;
+}
+
+.left-radius {
+  border-radius: 10px 0px 0px 10px/10px 0px 0px 10px;
+}
+
+.right-radius {
+  border-radius: 0px 10px 10px 0px/0px 10px 10px 0px;
+}
+
+.terminal {
+  border-radius: 10px;
+  box-shadow: 0 4px 16px 0px rgba(0, 0, 0, 0.4);
+}
+.terminal .terminal-header {
+  background-color: #222f3e;
+  border-radius: 10px 10px 0px 0px;
+}
+.terminal .terminal-header .traffic-lights .light {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.terminal .terminal-header .traffic-lights .procedural {
+  background-color: #ff3831;
+}
+.terminal .terminal-header .traffic-lights .object-oriented {
+  background-color: rgb(116, 245, 23);
+}
+.terminal .terminal-header .traffic-lights .pdo {
+  background-color: rgb(250, 231, 25);
+}
+.terminal .terminal-header .btn-copy, .terminal .terminal-header .btn-edit, .terminal .terminal-header .btn-reload {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.terminal .terminal-output {
+  background-color: black;
+  border-radius: 0px 0px 10px 10px;
+}
+.terminal .terminal-output #terminal-output {
+  width: 100%;
+  height: 600px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 0px 0px 10px 10px;
+}
+.terminal .terminal-output #terminal-output::-webkit-scrollbar {
+  width: 5px;
+}
+.terminal .terminal-output #terminal-output::-webkit-scrollbar-track {
+  background-color: transparent;
+  background-clip: content-box;
+}
+.terminal .terminal-output #terminal-output::-webkit-scrollbar-thumb {
+  background-color: #222f3e;
+  border-radius: 15px;
+  width: 24px;
+}
+.terminal .terminal-output:focus, .terminal .terminal-output:active {
+  background-color: black;
+  border: none;
+  outline: none;
+  color: #0be881;
+  scrollbar-width: 0px !important;
+}/*# sourceMappingURL=style.css.map */

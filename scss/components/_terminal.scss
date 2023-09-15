@@ -1,0 +1,67 @@
+.terminal {
+  border-radius: 10px;
+  box-shadow: 0 4px 16px 0px rgba(0,0,0,0.4);
+  .terminal-header {
+    background-color: $terminal-header-bg;
+    border-radius: 10px 10px 0px 0px;
+    .traffic-lights {
+      .light {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .procedural {
+        background-color: $procedural;
+      }
+      .object-oriented {
+        background-color: $object-oriented;
+      }
+      .pdo {
+        background-color: $pdo;
+      }
+    }
+    .btn-copy,.btn-edit,.btn-reload{
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+  .terminal-output {
+    background-color: $terminal-output-bg;
+    border-radius: 0px 0px 10px 10px;
+
+    #terminal-output {
+      width: 100%;
+      height: 600px;
+      border: none;
+      outline: none;
+      resize: none;
+      border-radius: 0px 0px 10px 10px;
+
+      &::-webkit-scrollbar{
+        width: 5px;
+      }
+      
+      &::-webkit-scrollbar-track{
+        background-color: transparent;
+        background-clip: content-box;
+      }
+
+      &::-webkit-scrollbar-thumb{
+        background-color: $terminal-header-bg;
+        border-radius: 15px;
+        width: 24px;
+      }
+    }
+
+    &:focus,
+    &:active {
+      background-color: $terminal-output-bg;
+      border: none;
+      outline: none;
+      color: $terminal-output-color;
+      scrollbar-width: 0px !important;
+    }
+  }
+}

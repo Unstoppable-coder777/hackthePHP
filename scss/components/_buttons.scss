@@ -1,0 +1,33 @@
+#exec{
+    padding: 8px 16px;
+    background-color: $terminal-header-bg;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: $terminal-output-color;
+    cursor: pointer;
+}
+
+.menu-btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: .7em;
+}
+
+.code-btn{
+    padding: 8px 16px;
+    background-color: $terminal-header-bg;
+    border: none;
+    outline: none;
+    color: $terminal-output-color;
+    cursor: pointer;
+}
+
+.left-radius{
+    border-radius: 10px 0px 0px 10px / 10px 0px 0px 10px;
+}
+
+.right-radius{
+    border-radius: 0px 10px 10px 0px / 0px 10px 10px 0px;
+}

@@ -1,0 +1,9 @@
+@import "../abstracts/variables";
+
+.body-bg{ background-color: $body-background; }
+.header-bg{ background-color: $background-2; }
+.color-white{ color: $text-white;}
+
+.terminal-header-bg{ background-color: $terminal-header-bg;}
+.terminal-output-bg{ background-color: $terminal-output-bg;}
+.terminal-output-color{ color: $terminal-output-color; }
